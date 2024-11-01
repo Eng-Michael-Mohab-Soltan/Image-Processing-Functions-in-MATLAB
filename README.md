@@ -7,53 +7,53 @@ This repository provides a set of MATLAB functions for various image processing 
 
 # 📖 Table of Contents
 
-- [📜 Overview](#🔍-overview)
+- [📜 Overview]
 - ### 🛠️ Functions Overview()
   - #### 🔧 Utility Functions
-    - [📊 Histogram Calculation](#📊-histogram-calculation)
+    - [📊 Histogram Calculation]
 
   - #### 🎛️ Image Adjustment
-    - [🌞 Gamma Correction](#🌞-gamma-correction)
-    - [⚖️ Contrast Stretching](#⚖️-contrast-stretching)
+    - [🌞 Gamma Correction]
+    - [⚖️ Contrast Stretching]
 
   - #### 🔍 Segmentation Techniques
-    - [📐 Local Adaptive Segmentation](#📐-local-adaptive-segmentation)
-    - [🎨 HSV Color Segmentation](#🎨-hsv-color-segmentation)
+    - [📐 Local Adaptive Segmentation]
+    - [🎨 HSV Color Segmentation]
 
   - #### 📈 Histogram Operations
-    - [🔄 Histogram Equalization](#🔄-histogram-equalization)
-    - [🎯 Histogram Matching](#🎯-histogram-matching)
+    - [🔄 Histogram Equalization]
+    - [🎯 Histogram Matching]
 
   - #### 📊 Image Analysis and Comparison
-    - [📷 Compare Outputs for Grayscale](#📷-compare-outputs-for-grayscale)
-    - [🎨 Compare Outputs for Colored Images](#🎨-compare-outputs-for-colored-images)
+    - [📷 Compare Outputs for Grayscale]
+    - [🎨 Compare Outputs for Colored Images]
 
   - #### 📉 Quality and Distortion Metrics
-    - [📏 Image Distortion Measures](#📏-image-distortion-measures)
+    - [📏 Image Distortion Measures]
 
   - #### 🔊 Noise Operations
-    - [⚙️ Salt Noise Addition](#⚙️-salt-noise-addition)
+    - [⚙️ Salt Noise Addition]
 
   - #### 🧹 Filtering Techniques
-    - [3️⃣ 3x3 Average Filter](#3️⃣-3x3-average-filter)
-    - [3️⃣ 3x3 Median Filter](#3️⃣-3x3-median-filter)
-    - [5️⃣ 5x5 Median Filter](#5️⃣-5x5-median-filter)
+    - [3️⃣ 3x3 Average Filter]
+    - [3️⃣ 3x3 Median Filter]
+    - [5️⃣ 5x5 Median Filter]
 
   - #### 📐 Bounding Box Annotation
-    - [✏️ Show Drawn Bounding Boxes](#✏️-show-drawn-bounding-boxes)
+    - [✏️ Show Drawn Bounding Boxes]
 
 
 
 
 
-# 🔍 Overview
+## 🔍 Overview
 
 This collection of functions serves as a comprehensive toolkit for essential image processing operations, facilitating various tasks such as enhancing image quality, performing effective noise reduction, and enabling precise segmentation. The provided functions are designed to support educational and practical applications in fields like computer vision, remote sensing, and medical imaging. Users can easily implement these functions to manipulate images, assess their quality, and visualize outcomes, thus fostering a deeper understanding of image processing principles and techniques.
 
 
-# 🛠️ Functions Overview()
+## 🛠️ Functions Overview()
 
-## 📊 Histogram Calculation
+#### 📊 Histogram Calculation
 
 ```matlab
 % Utility Functions: Histogram Calculation
@@ -68,8 +68,8 @@ function outt = My_Hist(IM)
 % @return outt: Histogram of the image
 function outt = my_histogram(Image)
 ```
-## 🎛️ Image Adjustment
-### ⚖️ Contrast Stretching
+### 🎛️ Image Adjustment
+#### ⚖️ Contrast Stretching
 
 ```matlab
 % Perform Contrast Stretching on the input image.
@@ -78,7 +78,7 @@ function outt = my_histogram(Image)
 % @brief Expands the intensity range of the image for better contrast by stretching from minimum to maximum values.
 function outt = My_Contrast_Stretching(IM)
 ```
-### 🌞 Gamma Correction
+#### 🌞 Gamma Correction
 
 ```matlab
 % Gamma Correction for brightness adjustment.
@@ -88,8 +88,8 @@ function outt = My_Contrast_Stretching(IM)
 % @brief Useful for brightness control; gamma > 1 brightens, < 1 darkens.
 function outt = My_Gamma_Correction(IM,Gamma_Level)
 ```
-## 🔍 Segmentation Techniques
-### 📐 Local Adaptive Segmentation
+### 🔍 Segmentation Techniques
+#### 📐 Local Adaptive Segmentation
 
 ```matlab
 % Perform Local Adaptive Segmentation.
@@ -100,7 +100,7 @@ function outt = My_Gamma_Correction(IM,Gamma_Level)
 % @brief Local adaptive segmentation improves thresholding where shadows are present.
 function outt = My_Local_Adaptive_Segmentation(IM, Length, Width)
 ```
-### 🎨 HSV Color Segmentation
+#### 🎨 HSV Color Segmentation
 
 ```matlab
 % Perform HSV-based color segmentation.
@@ -112,8 +112,8 @@ function outt = My_Local_Adaptive_Segmentation(IM, Length, Width)
 % @brief HSV segmentation isolates colors in the specified hue range.
 function outt = My_HSV_Segmentation(IM, Hue_Magrin, Sat_Magrin, Val_Magrin)
 ```
-## 📈 Histogram Operations
-### 🔄 Histogram Equalization
+### 📈 Histogram Operations
+#### 🔄 Histogram Equalization
 
 ```matlab
 % Histogram Equalization for contrast enhancement.
@@ -122,7 +122,7 @@ function outt = My_HSV_Segmentation(IM, Hue_Magrin, Sat_Magrin, Val_Magrin)
 % @brief Spreads pixel intensity distribution across the range, enhancing contrast.
 function outt = My_Histogram_Equalization(IM)
 ```
-### 🎯 Histogram Matching
+#### 🎯 Histogram Matching
 
 ```matlab
 % Perform histogram matching on the input image based on a reference image.
@@ -133,8 +133,8 @@ function outt = My_Histogram_Equalization(IM)
 % @brief Useful for standardizing brightness and contrast across different images.
 function outt = my_histogram_maching(Input_Image, ref)
 ```
-## 📊 Image Analysis and Comparison
-### 📷 Compare Outputs for Grayscale
+### 📊 Image Analysis and Comparison
+#### 📷 Compare Outputs for Grayscale
 
 ```matlab
 % Compare the output of a given function applied to a grayscale image with its original version.
@@ -143,7 +143,7 @@ function outt = my_histogram_maching(Input_Image, ref)
 % @param image_name_string: Name of the input image file
 function My_Compare_Outputs_Gray(func, image_name_string)
 ```
-### 🎨 Compare Outputs for Colored Images
+#### 🎨 Compare Outputs for Colored Images
 
 ```matlab
 % Compare the output of a given function applied to a colored image with its original version.
@@ -152,8 +152,8 @@ function My_Compare_Outputs_Gray(func, image_name_string)
 % @param image_name_string: Name of the input image file
 function My_Compare_Outputs_Colored(func, image_name_string)
 ```
-## 📉 Quality and Distortion Metrics
-### 📏 Image Distortion Measures
+### 📉 Quality and Distortion Metrics
+#### 📏 Image Distortion Measures
 
 ```matlab
 % Calculate distortion measures between an original image and a distorted image.
@@ -163,8 +163,8 @@ function My_Compare_Outputs_Colored(func, image_name_string)
 % @return outt: Array containing Mean Absolute Error, Mean Squared Error, and PSNR
 function outt = Image_Dostortion_Mesures(original_image, distorted_image)
 ```
-## 🔊 Noise Operations
-### ⚙️ Salt Noise Addition
+### 🔊 Noise Operations
+#### ⚙️ Salt Noise Addition
 
 ```matlab
 % Add noise to the input image.
@@ -175,8 +175,8 @@ function outt = Image_Dostortion_Mesures(original_image, distorted_image)
 % @brief Adds random salt noise to enhance testing robustness for noise reduction filters or detection algorithms.
 function outt = Add_salt_Noise(IM, percent)
 ```
-## 🧹 Filtering Techniques
-### 3️⃣ 3x3 Average Filter
+### 🧹 Filtering Techniques
+#### 3️⃣ 3x3 Average Filter
 
 ```matlab
 % Apply a 3x3 average filter to the input image.
@@ -186,7 +186,7 @@ function outt = Add_salt_Noise(IM, percent)
 % @brief Reduces noise by averaging pixel values in a 3x3 neighborhood, effective for low-frequency noise.
 function outt = average_filter3x3(input_image)
 ```
-### 3️⃣ 3x3 Median Filter
+#### 3️⃣ 3x3 Median Filter
 
 ```matlab
 % Apply a 3x3 median filter to the input image.
@@ -196,7 +196,7 @@ function outt = average_filter3x3(input_image)
 % @brief Reduces salt-and-pepper noise by taking the median value of pixels in a 3x3 neighborhood.
 function outt = median_filter3x3(input_image)
 ```
-### 5️⃣ 5x5 Median Filter
+#### 5️⃣ 5x5 Median Filter
 
 ```matlab
 % Apply a 5x5 median filter to the input image.
@@ -205,8 +205,8 @@ function outt = median_filter3x3(input_image)
 % @brief Reduces noise while preserving edges by applying a median filter in a larger neighborhood.
 function outt = median_filter5x5(input_image)
 ```
-## 📐 Bounding Box Annotation
-### ✏️ Show Drawn Bounding Boxes
+### 📐 Bounding Box Annotation
+#### ✏️ Show Drawn Bounding Boxes
 
 ```matlab
 % Draw bounding boxes on a colored image based on regions in a segmented binary image (segmentation) like hsv segmentation, local adaptive segmentation, threshold segmentation.
