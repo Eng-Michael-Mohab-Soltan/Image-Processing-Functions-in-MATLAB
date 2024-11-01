@@ -7,42 +7,41 @@ This repository provides a set of MATLAB functions for various image processing 
 
 # 📖 Table of Contents
 
-- [📜 Overview]
-  - Brief introduction to the functionalities and applications of the image processing functions.
-
+- [📜 Overview](#🔍-overview)
 - ### 🛠️ Functions Overview()
   - #### 🔧 Utility Functions
-    - [📊 Histogram Calculation]
+    - [📊 Histogram Calculation](#📊-histogram-calculation)
 
   - #### 🎛️ Image Adjustment
-    - [🌞 Gamma Correction]
-    - [⚖️ Contrast Stretching]
+    - [🌞 Gamma Correction](#🌞-gamma-correction)
+    - [⚖️ Contrast Stretching](#⚖️-contrast-stretching)
 
   - #### 🔍 Segmentation Techniques
-    - [📐 Local Adaptive Segmentation]
-    - [🎨 HSV Color Segmentation]
+    - [📐 Local Adaptive Segmentation](#📐-local-adaptive-segmentation)
+    - [🎨 HSV Color Segmentation](#🎨-hsv-color-segmentation)
 
   - #### 📈 Histogram Operations
-    - [🔄 Histogram Equalization]
-    - [🎯 Histogram Matching]
+    - [🔄 Histogram Equalization](#🔄-histogram-equalization)
+    - [🎯 Histogram Matching](#🎯-histogram-matching)
 
   - #### 📊 Image Analysis and Comparison
-    - [📷 Compare Outputs for Grayscale]
-    - [🎨 Compare Outputs for Colored Images])
+    - [📷 Compare Outputs for Grayscale](#📷-compare-outputs-for-grayscale)
+    - [🎨 Compare Outputs for Colored Images](#🎨-compare-outputs-for-colored-images)
 
   - #### 📉 Quality and Distortion Metrics
-    - [📏 Image Distortion Measures]
+    - [📏 Image Distortion Measures](#📏-image-distortion-measures)
 
   - #### 🔊 Noise Operations
-    - [⚙️ Salt Noise Addition]
+    - [⚙️ Salt Noise Addition](#⚙️-salt-noise-addition)
 
   - #### 🧹 Filtering Techniques
-    - [3️⃣ 3x3 Average Filter]
-    - [3️⃣ 3x3 Median Filter]
-    - [5️⃣ 5x5 Median Filter]
+    - [3️⃣ 3x3 Average Filter](#3️⃣-3x3-average-filter)
+    - [3️⃣ 3x3 Median Filter](#3️⃣-3x3-median-filter)
+    - [5️⃣ 5x5 Median Filter](#5️⃣-5x5-median-filter)
 
   - #### 📐 Bounding Box Annotation
-    - [✏️ Show Drawn Bounding Boxes]
+    - [✏️ Show Drawn Bounding Boxes](#✏️-show-drawn-bounding-boxes)
+
 
 
 
